@@ -122,3 +122,13 @@ select * from employees where id>4 and id<8;
 select * from employees where id=10 or last_name='Robert'
 
 select * from employees where sex='F' and employee_position='Geomatician'
+
+update employees set pin='1234567890900' where id=1;
+
+update employees set employee_position='Geomatician' where id>4 and id<8;
+
+update employees set first_name='Constantinescu' where id=1;
+
+update gps set battery_time='15:00:00' where model='Galaxy South' and permanent_station='Rompos'
+
+update administrative_unit set villages_number='5' where name='Remetea Mare'
