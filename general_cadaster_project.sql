@@ -106,3 +106,19 @@ values
 		(5,2)
 
 select * from team_administrative_unit
+
+delete from employees where pin='1234567890123';
+
+select first_name, last_name, sex from employees;
+
+select first_name as "Nume angajat", last_name as "Prenume angajat", pin as "CNP", NOW() as "Data raport" from employees;
+
+select first_name as "Nume angajat", last_name as "Prenume angajat", pin as "CNP", NOW() as "Data raport" from employees as e;
+
+select * from employees where id in (1,5,3);
+
+select * from employees where id>4 and id<8;
+
+select * from employees where id=10 or last_name='Robert'
+
+select * from employees where sex='F' and employee_position='Geomatician'
