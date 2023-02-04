@@ -132,3 +132,25 @@ update employees set first_name='Constantinescu' where id=1;
 update gps set battery_time='15:00:00' where model='Galaxy South' and permanent_station='Rompos'
 
 update administrative_unit set villages_number='5' where name='Remetea Mare'
+
+CREATE VIEW employees_general_view AS
+SELECT * FROM employees;
+
+create view employees_F as 
+select * from employees where sex='F'
+
+create view employees_M as 
+select * from employees where sex='M'
+
+create view employees_geomatician as 
+select * from employees where employee_position='Geomatician'
+
+create view  syscad_gps_south as
+select * from gps where model='Hi-Target' and permanent_station='SysCad'
+
+select * from syscad_gps_south
+
+create view long_lasting_gps as
+select * from gps where battery_time>'20:00:00'
+
+select * from long_lasting_gps
